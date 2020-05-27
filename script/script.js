@@ -14,12 +14,13 @@ function myFunction(){
           for (var i = 0; i < remove_line.length; i++) {
                     if(remove_line[i]==' '){
                        total+=1;
-                       text += remove_line[i];
                        if (total==num) 
                        {
                            text +="\n";
-                           total = 0;            
+                           total = 0;   
+                           continue;         
                        }  
+                       text += remove_line[i];
                      }  
                      else{
                       text += remove_line[i];
